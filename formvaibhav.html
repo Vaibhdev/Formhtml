@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaibhavNGINEERINGCOLLEGE.COM</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+       .box{
+        width:800px;
+        background-color: aquamarine;
+        border: 3px solid red;
+        padding:15px 15px;
+        margin:50px 50px;
+        border-radius: 4px;
+        box-sizing: border-box;
+       }
+       
+       .red{
+        width:75px;
+        background-color: red;
+        border: 3px solid red;
+        padding-left:5px;
+        border-radius: 4px;
+        box-sizing: border-box;
+       }
+       .blue{
+        width:75px;
+        background-color: green;
+        border: 3px solid red;
+        padding-left:7.5px;
+        border-radius: 4px;
+        box-sizing: border-box;
+       }
+       #jiomo{
+        background-color: rgb(128, 78, 39);
+        color:blueviolet;
+        border-radius: 3px;
+       }
+       body{
+        background-color: rgb(72, 22, 66);
+       }
+       #jiomo:hover{
+        background-color: brown;
+        color:rgb(39, 128, 61);
+       }
+       #jomoro{
+        background-color: rgb(48, 156, 136);
+        color:blueviolet;
+        border-radius: 3px;
+       }
+       #jomoro:hover{
+        color: rgb(103, 43, 43);
+        background-color:rgb(15, 159, 15);
+       }
+       #po{
+        background-color: rgb(71, 45, 12);
+       }
+       .nav{
+          background-color: black
+       }
+       .nav ul{
+          background-color: aquamarine;
+          overflow: auto;
+          list-style-type:none;
+          flex-direction: column;
+          justify-content: end;
+       }
+       .nav li{
+           float: left;
+           color: blue;
+           padding:35px 35px;
+       }
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <nav class="nav">
+            <u1>
+                <li><a>HOME</a></li>
+                <li><a>ACADEMICS</a></li>
+                <li><a>LOGIN/REGISTER</a></li>
+                <li><a>ABOUT US</a></li>
+                <li><a>CONTACT US</a></li>
+            </u1>
+        </nav>
+        <br>
+        <br>
+        <div class="box">
+          NAME:<input type="text" name="myname">
+        </div>
+        <br>
+        <div class="box">
+            FATHER's NAME:<input type="text" name="myfather'sNAme">
+        </div>
+        <br>
+        <div class="box">
+            DATE OF BIRTH:<input type="date" name="mydate">
+        </div>
+        <br>
+        <div class="box">
+            GENDER: MALE<input type="radio" name="mygender"> FEMALE<input type="radio" name="mygender">OTHER<input type="radio" name="mygender">
+        </div>
+        <br>
+        <div class="box">
+            PERCENTAGE IN INTERMEDIATE:<input type="number" name="mynumber">
+        </div>
+        <br>
+        <div class="box">
+            <label for="COURSE OPTION">COURSE YOU WANT TO OPT:</label>
+            <select name="mycourse" id="COURSE OPTION">
+                <option value="SELECT">SELECT</option>
+                <option value="COMPUTER SCIENCE AND ENGINEERING">COMPUTER SCIENCE AND ENGINEERING</option>
+                <option value="ELECTRONICS AND COMPUTER ENGINEERING">ELECTRONICS AND COMPUTER ENGINEERING</option>
+                <option value="ELECTRICAL ENGINEERING">ELECTRONICS AND COMPUTER ENGINEERING</option>
+                <option value="MECHANICAL ENGINEERING"> MECHANICAL ENGINEERING</option>
+                <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+                <option value="AUR KONSI GAND MRWANE WALI ENGINEERING">AUR KONSI GAND MRWANE WALI ENGINEERING</option>
+            </select>
+        </div>
+        <br>
+        <div class="box">
+            Why you want to opt this course:<br><textarea name="mytext" cols="100" rows="20"></textarea>
+        </div>
+        <br>
+        <h4>RULES THAT YOU HAVE TO FOLLOW IN THIS ENGINEERING COLLEGE</h4>
+        <u1>
+            <li>Hostel ke bahar jane mna hai</li>
+            <li>75 percent attendance dena pdeaga nhi toh exam dene nhi milega</li>
+            <li>Mess main accha khana nhi milega</li>
+            <li>jana tcs main hi pdega</li>
+            <li>fees lut lenge tumse</li>
+        </u1>
+        <div>
+            I HAVE READ ALL CONDITION :<input type="checkbox" name="myeligibility" id="po">
+        </div>
+        <br>
+        <div class="blue">
+            <input type="reset" name="myreset" id="jomoro">
+        </div>
+        <br>
+        <div class="red">
+            <input type="submit" name="submit" id="jiomo">
+        </div>
+        <footer>
+            welcome to our college.....
+        </footer>
+
+    </form>
+</body>
+</html>
